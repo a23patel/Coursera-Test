@@ -1,1 +1,118 @@
+<style>
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: lightyellow;
+}
 
+h1 {
+	margin: 10px;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 175%;
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+section {
+	position: relative;
+	background-color: grey;
+	border:  1px solid black;
+	text-align: justify;
+	margin-top: 20px;
+	margin-right: 20px;
+	}
+
+div {
+	border: 1px solid black;
+	position: relative;
+	width: 100%;
+
+}
+
+.Item1 {
+	float:  right;
+	width: 100px;
+	padding: 4px;
+	margin: 0px;
+	border: 2px solid black;
+	font-size: 125%;
+	font-weight: bold;
+	font-family: Arial;
+	text-align:  center;
+	background-color: greenyellow;
+}
+
+.Item2 {
+	float:  right;
+	width: 100px;
+	padding: 4px;
+	margin: 0px;
+	border: 2px solid black;
+	font-size: 125%;
+	font-weight: bold;
+	font-family: Arial;
+	text-align:  center;
+	background-color: yellow;
+}
+
+.Item3 {
+	float:  right;
+	width: 100px;
+	padding: 4px;
+	margin: 0px;
+	border: 2px solid black;
+	font-size: 125%;
+	font-weight: bold;
+	font-family: Arial;
+	text-align:  center;
+	background-color: orange;
+}
+
+p {
+	font-family: Arial;
+	padding: 35px 15px 5px 5px;
+	margin: 10px;
+	position: relative;
+	text-align: justify;
+
+}
+
+.row{
+	width: 100%;
+}
+
+/*desktop version*/
+@media (min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*tablet version*/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;
+		width: 50%;
+	}
+
+	.col-md-12{
+		margin-left: -10px;
+		width: 100%;
+		float: left;
+	}
+}
+
+/*mobile version*/
+@media (max-width: 767px){
+	.col-sm-12{
+		float: left;
+		width: 100%;
+				
+	}
+}
+
+</style>
