@@ -1,13 +1,14 @@
 <style>
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-body {
+
+body{
 	background-color: lightyellow;
 }
 
 h1 {
-	margin: 10px;
+	margin: 25px;
 	text-align: center;
 	font-family: Arial;
 	font-weight: bold;
@@ -16,103 +17,99 @@ h1 {
 	text-transform: uppercase;
 }
 
-section {
-	position: relative;
-	background-color: grey;
-	border:  1px solid black;
-	text-align: justify;
-	margin-top: 20px;
-	margin-right: 20px;
-	}
-
-div {
-	border: 1px solid black;
-	position: relative;
-	width: 100%;
-
+h2 {
+  font-size: 125%;
+  text-align: center
+  font-weight: bold;
+  font-family: Arial;
 }
 
-.Item1 {
-	float:  right;
-	width: 100px;
-	padding: 4px;
-	margin: 0px;
-	border: 2px solid black;
-	font-size: 125%;
-	font-weight: bold;
-	font-family: Arial;
-	text-align:  center;
-	background-color: greenyellow;
+.container{
+ position: relative;
+ top:30px;
+ margin: 0px 5px 5px 0px; 
+ width: 100%;
 }
 
-.Item2 {
-	float:  right;
-	width: 100px;
-	padding: 4px;
-	margin: 0px;
-	border: 2px solid black;
-	font-size: 125%;
-	font-weight: bold;
-	font-family: Arial;
-	text-align:  center;
-	background-color: yellow;
+.content{
+  position: relative;
+  top: 0;
+  background-color: lightgray;
+  margin: 20px;
+  padding: 30px;
+  border: 3px solid black;
 }
 
-.Item3 {
-	float:  right;
-	width: 100px;
-	padding: 4px;
-	margin: 0px;
-	border: 2px solid black;
-	font-size: 125%;
-	font-weight: bold;
-	font-family: Arial;
-	text-align:  center;
-	background-color: orange;
+.content p{
+  margin-top: 50px;
+  text-align: justify;
+  font-family: Arial;
 }
 
-p {
-	font-family: Arial;
-	padding: 35px 15px 5px 5px;
-	margin: 10px;
-	position: relative;
-	text-align: justify;
 
+#Item1 {
+  background-color: greenyellow;
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  padding: 2px 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-.row{
-	width: 100%;
+#Item2 {
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  right : 0px;
+  padding: 2px 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-/*desktop version*/
-@media (min-width: 992px){
-	.col-lg-4{
-		float: left;
-		width: 33.33%;
-	}
+#Item3 {
+  background-color: orange;
+  position: absolute;
+  top: 0px;
+  right : 0px;
+  padding: 2px 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-/*tablet version*/
-@media (min-width: 768px) and (max-width: 991px){
-	.col-md-6{
-		float: left;
-		width: 50%;
-	}
 
-	.col-md-12{
-		margin-left: -10px;
-		width: 100%;
-		float: left;
-	}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;   
+    width: 33.33%;
+  }
 }
 
-/*mobile version*/
-@media (max-width: 767px){
-	.col-sm-12{
-		float: left;
-		width: 100%;
-				
-	}
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+
+  }
+ .col-md-12 {
+    width: 100%;
+    margin-left: -10px;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
 }
 
 </style>
+
